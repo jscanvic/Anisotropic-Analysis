@@ -1,0 +1,33 @@
+[project]
+name = "equivania"
+version = "0.1.0"
+description = "Anisotropic image analysis is ubiquitous in medical and scientific imaging, and while the literature on the subject is extensive, the robustness to numerical rotations of numerous methods remains to be studied. Indeed, the principal directions and angular profile of a rotated image are often expected to rotate accordingly. In this work, we propose a new spectral method for the anisotropic analysis of images (EquivAnIA) using two established directional filters, namely cake wavelets, and ridge filters. We show that it is robust to numerical rotations throughout extensive experiments on synthetic and real-world images containing geometric structures or textures, and we also apply it successfully for a task of angular image registration."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "torch>=2.8.0",
+    "pydicom>=3.0.1",
+    "numpy>=2.2.6",
+    "matplotlib>=3.10.5",
+    "torchvision>=0.23.0",
+    "scikit-image>=0.25.2",
+    "pyrtools>=1.0.10",
+]
+
+[tool.ruff.lint]
+select = [
+    # pycodestyle
+    "E",
+    # Pyflakes
+    "F",
+    # pyupgrade
+    "UP",
+    # flake8-bugbear
+    "B",
+    # flake8-simplify
+    "SIM",
+    # isort
+    "I",
+]
+
+ignore = ["E501"]

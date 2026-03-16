@@ -1,0 +1,10 @@
+im_kind: "texture"
+texture_path: "texture_bark.jpg"
+angular_resolution: 1000
+profile_methods: ["cake_wavelet", "ridge", "binning"]
+apply_mask: True
+apply_preprocessing_mask: False
+angular_profile_sense: "counterclockwise"
+angular_profile_filtering: "bandpass"
+consistent_filering_binning: True
+psd_method: "welch"

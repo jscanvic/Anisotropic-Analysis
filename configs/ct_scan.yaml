@@ -1,0 +1,10 @@
+im_kind: "tomography"
+dicom_file: "ct_scan.dcm"
+angular_resolution: 1000
+profile_methods: ["cake_wavelet", "ridge", "binning"]
+apply_mask: False
+apply_preprocessing_mask: False
+angular_profile_sense: "counterclockwise"
+angular_profile_filtering: "bandpass"
+consistent_filering_binning: True
+psd_method: "welch"
